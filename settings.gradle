@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "FFmpegUtils"
 include ':app'
+include ':nativelib'

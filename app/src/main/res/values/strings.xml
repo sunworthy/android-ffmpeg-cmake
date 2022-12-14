@@ -13,4 +13,5 @@
 
     <string name="img_description">Description</string>
     <string name="empty" />
+    <string name="convert">convert</string>
 </resources>

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import com.josh.nativelib.NativeLib
 import com.joshkryo.ffmpeg.databinding.FragmentSecondBinding
 
 /**
@@ -31,6 +32,11 @@ class SecondFragment : Fragment() {
 
         _binding?.btnSelectMp4?.setOnClickListener {
             openAlbum()
+        }
+
+        binding.btnConvert.setOnClickListener{
+            val str = NativeLib().stringFromJNI()
+            Toast.makeText(context, str, Toast.LENGTH_LONG).show()
         }
     }
 
